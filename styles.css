@@ -1,0 +1,229 @@
+/* Global*/
+
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header span {
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 16px;
+    width: 80%;
+    text-align: center;
+}
+
+
+/* Header */
+header .container {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul {
+   justify-content: space-between;
+   display: flex;
+   gap: 20px;
+   list-style: none;
+   font-size: 20px;
+   
+   
+}
+
+
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: lightblue;
+}
+
+header {
+    background-color: violet;
+    color: whitesmoke;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 3px solid salmon;
+
+}
+
+header a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: inherit 
+
+}
+
+header a:hover {
+    color: slateblue;
+    font-weight: 800;
+}
+
+header span {
+     
+}
+
+/* showcase hero */
+
+.showcase {
+  background-image: url(https://picsum.photos/id/2/1500/500/?blur=4);
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container h1 {
+    color: white;
+}
+
+.container p {
+    color: blueviolet;
+}
+
+.showcase .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcase h1 {
+    font-size: 55px;
+}
+
+.showcase p {
+    font-size: 20px;
+    color: deeppink;
+    padding-inline: 10%;
+}
+
+.newsletter {
+    color:coral;
+    background-color: lightskyblue;
+    padding: 15px;
+    
+}
+
+.newsletter h1 {
+    color: red;
+}
+
+.newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+form input {
+    border: none;
+    padding: 8px 4px;
+    border-radius: 4px;
+}
+
+form button {
+    padding-left: 10px 16px;
+    border: none;
+    background-color: salmon;
+    border: none;
+
+}
+
+.newsletter input [type=email] {
+    width:250px ;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.newsletter button {
+    font-size: 20px;
+    padding: 4px 8px;
+    color: white;
+    background-color: coral;
+    border: none;
+    border-radius: 10px;
+    transition: transform;
+}
+
+/*.boxes .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}*/
+
+
+/* Feature Boxes */
+.boxes .container {
+    justify-content: space-between;
+
+
+}
+
+.boxes img {
+    height: 120px;
+}
+
+.boxes .box {
+    text-align: center;
+    padding: 12pxs;
+}
+
+footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    background-color: orange;
+    height: 60px;
+    
+  
+}
+
+@media (max-width : 900px )
+ {
+   header .container { 
+    align-items: center;
+    flex-direction: column;
+   }
+   .newsletter .container {
+    align-items: center;
+    flex-direction: column;
+   }
+   .newsletter form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .boxes .container {
+    align-items: center;
+    flex-direction: column;
+   }
+   
+   
+}
+
